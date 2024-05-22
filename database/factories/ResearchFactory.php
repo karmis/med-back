@@ -23,7 +23,7 @@ class ResearchFactory extends Factory
                 'Исследование на зависимости',
                 'Судмед экспертиза'
             ]),
-            'code' => fake()->numberBetween(10000000, 99999999),
+            'code' => fake()->numberBetween(10000000, 99999998),
         ];
     }
 }

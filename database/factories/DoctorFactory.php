@@ -4,22 +4,18 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Doctor>
- */
-class DoctorFactory extends Factory
-{
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
-    public function definition(): array
+
+
+class DoctorFactory extends Factory {
+    public function  definition(): array
+
     {
         return [
-            'fio' => fake('ru')->name(),
+            'fio' => fake ('ru') -> name(),
             'snils' => fake()->numberBetween(100000000, 999999999),
-            //
         ];
     }
 }
+
+
+
